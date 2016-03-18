@@ -1,0 +1,239 @@
+body{
+	font: bold 16px sans-serif;
+}
+.nav-button{
+  color: blue;
+}
+.navbarlist ul li a:hover{
+  background-color: #0B3B39;
+  color: white;
+}
+@media (min-width:500px) {
+  text{
+    font-size: 20px;
+  }
+}
+#navbar{
+  margin-bottom: 2px;
+}
+.toggle-color{
+  background-color: #0B3B39;
+}
+a{
+  text-decoration: none;
+}
+
+#middle-text{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: blue
+  font-size: 30px;
+}
+#middle-image{
+  position: relative;
+  width: 80%;
+  border: 1px solid blue;
+  text-align: center;
+  margin-bottom: 15px;
+}
+#middle-image-circle{
+  position: relative;
+  border: 1px solid blue;
+  text-align: center;
+  margin-bottom: 15px;
+}
+#middle-box-circle{
+  position: relative;
+  text-align: center;
+  margin-bottom: 15px;
+}
+#row-line{
+  color: #2ECCFA;
+  margin-top: 0px;
+  background: #0B3B39;
+  margin-bottom: 10px;
+}
+#row-line-middle{
+  color: #2ECCFA;
+  margin-top: 0px;
+  text-align: center;
+  background: #0B3B39;
+  margin-bottom: 10px;
+}
+#side-image{
+  height: 100%;
+  width: 100%;
+}
+@media (max-width: @screen-xs-max) {
+  p{
+    font-size: 20px;
+  }
+}
+@media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) { ... }
+@media (min-width: @screen-md-min) and (max-width: @screen-md-max) { ... }
+@media (min-width: @screen-lg-min) { ... }
+/*<!-- footer -->*/
+.footermain{
+	background-color: #0B3B39;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	text-align: left;
+	font: bold 16px sans-serif;
+
+	padding: 55px 50px;
+	margin-top: 80px;
+}
+
+.footermain .footer-left , .footermain .footer-center , .footermain .footer-right{
+	display: inline-block;
+	vertical-align: top;
+}
+.footermain .footer-left{
+	width: 40%;
+}
+.footermain h3{
+	color:  #A9E2F3;
+	margin: 0;
+}
+.footermain h3 span{
+	color:  #5383d3;
+}
+
+.footermain .footer-links{
+	color:  #A9E2F3;
+	margin: 20px 0 12px;
+	padding: 0;
+}
+
+.footermain .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footermain .footer-copyright{
+	color:  #8f9296;
+	font-size: 14px;
+	font-weight: normal;
+	margin: 0;
+}
+.footermain .footer-center{
+	width: 35%;
+}
+
+.footermain .footer-center i{
+	background-color:  #33383b;
+	color: #A9E2F3;
+	font-size: 25px;
+	width: 38px;
+	height: 38px;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 42px;
+	margin: 10px 15px;
+	vertical-align: middle;
+}
+
+.footermain .footer-center p{
+	display: inline-block;
+	color: #A9E2F3;
+	vertical-align: middle;
+	margin:0;
+}
+
+.footermain .footer-center p span{
+	display:block;
+	font-weight: normal;
+	font-size:14px;
+	line-height:2;
+}
+
+.footermain .footer-center p a{
+	color:  #5383d3;
+	text-decoration: none;;
+}
+.footermain .footer-right{
+	width: 20%;
+}
+
+.footermain .footer-company-about{
+	line-height: 20px;
+	color:  #A9E2F3;
+	font-size: 13px;
+	font-weight: normal;
+	margin: 0;
+}
+
+.footermain .footer-company-about span{
+	display: block;
+	color:  #A9E2F3;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.footermain .footer-icons{
+	margin-top: 25px;
+}
+
+.footermain .footer-icons a{
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	cursor: pointer;
+	border-radius: 2px;
+
+	font-size: 20px;
+	color: #A9E2F3;
+	text-align: center;
+	line-height: 35px;
+
+	margin-right: 3px;
+	margin-bottom: 5px;
+}
+@media (max-width: 880px) {
+
+	.footermain{
+		font: bold 14px sans-serif;
+	}
+  @media only screen and (max-width: 880px) {
+
+   .aaaaa { font: 14px sans-serif; }
+}
+
+	.footermain .footer-left , .footermain .footer-center , .footermain .footer-right{
+		display: block;
+		width: 100%;
+		margin-bottom: 40px;
+		text-align: center;
+	}
+
+	.footermain .footer-center i{
+		margin-left: 0;
+	}
+
+}
+/*end footer*/
+
+
+@media all and (min-width: 960px) {
+    body{
+        font-size: 18px;
+    }
+}
+
+@media all and (max-width: 959px) and (min-width: 600px) {
+    body{
+        font-size: 16px;
+    }
+}
+
+@media all and (max-width: 599px) and (min-width: 320px) {
+    body{
+        font-size: 12px;
+    }
+
+}

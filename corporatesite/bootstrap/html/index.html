@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title></title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap-theme.css">
+    <link rel="stylesheet" href="../js/bootstrap.js">
+    <link rel="stylesheet" href="../js/jquery-1.8.2.min.js">
+
+  </head>
+  <body>
+
+    <!-- modal login -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="login">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Login</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+             <div class="form-group">
+               <label for="inputname">User-Name</label>
+               <input type="text" class="form-control" id="inputname" placeholder="Full Name">
+             </div>
+           <div class="form-group">
+             <label for="exampleInputPassword1">Password</label>
+             <input type="password" class="form-control" id="inputpassword" placeholder="Password">
+           </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">cancel</button>
+              <button type="submit" class="btn btn-primary">submit</button>
+            </div>
+    </form>
+ </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal login -->
+
+
+  <!-- modal Register -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="register">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Sign Up</h4>
+      </div>
+      <div class="modal-body">
+        <form>
+         <div class="form-group">
+
+           <div class="form-group">
+             <label for="inputname">Name</label>
+             <input type="text" class="form-control" id="inputname" placeholder="Full Name">
+           </div>
+
+           <label for="exampleInputEmail1">Email address</label>
+           <input type="email" class="form-control" id="inputemail" placeholder="Email">
+         </div>
+         <div class="form-group">
+           <label for="exampleInputPassword1">Password</label>
+           <input type="password" class="form-control" id="inputpassword" placeholder="Password">
+         </div>
+
+         <div class="form-group">
+           <label for="exampleInputPassword1">Phone number</label>
+           <input type="text" class="form-control" id="inputpassword" placeholder="Mobile Number">
+         </div>
+         <div class="modal-footer">
+          <button type="reset" class="btn btn-default" >Reset</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+   </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal register -->
+<!--------------------------------------------------------navbar--------------------->
+<nav class="navbar" id="navbar">
+  <div class="container" id="top">
+    <div class="navbar navbar-inverse navbar-fixed-top" id="navbar">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="secound">
+      <button type="button" class="navbar-toggle collapsed nav-button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="icon-bar toggle-color"></span>
+        <span class="icon-bar toggle-color"></span>
+        <span class="icon-bar toggle-color"></span>
+      </button>
+    </div>
+      <a class="navbar-brand" href="#">Wipro Ltd.</a>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+
+    <div class="collapse navbar-collapse navbarlist " id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav  navbar-right">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-user"></span> connect with us</a>
+          <ul class="dropdown-menu">
+            <li><a href="#login" data-toggle="modal">Login</a></li>
+            <li><a href="#register" data-toggle="modal">Register</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Login as guest</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+</div>
+
+
+</nav>
+
+<div class="container" id="top">
+
+    <div id="myCarousel" class="carousel slide hidden-md hidden-xs">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner">
+        <div class="item active">
+          <img src="../images/a.jpg" alt="wipro1">
+        </div>
+
+        <div class="item">
+          <img src="../images/b.jpg" alt="wipro2">
+        </div>
+
+        <div class="item">
+          <img src="../images/c.jpg" alt="wipr03">
+        </div>
+
+        <div class="item">
+          <img src="../images/d.jpg" alt="wipro4">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      </a>
+    </div>
+
+  <div class="row" id="middle-text">
+</div>
+  <div class="row">
+    <!-- service -->
+    <div class="col-lg-4 col-md-4 col-xl-4 col-sm-4 col-xs-4 text-center" id="middle-box">
+    <a href="#servicevedio" data-toggle="modal"><img src="../images/IT-Solutions.jpg" alt="" id="middle-image" /></a>
+    <p class="text-center">
+      <a href="#servicevedio" data-toggle="modal">Service</a>
+    </p>
+    </div>
+    <div id="servicevedio" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content" style="background-color: #BDBDBD;">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" name="button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/MbTmx9oyeBE" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end services -->
+
+<!-- start product -->
+    <div class="col-lg-4 col-md-4 col-xl-4 col-sm-4 col-xs-4 text-center" id="middle-box">
+    <a href="#productvideo" data-toggle="modal"><img src="../images/Solar-it-Solution.jpg" alt="" id="middle-image" /></a>
+    <p class="text-center">
+      <a href="#productvideo" data-toggle="modal">Product</a>
+    </p>
+    </div>
+
+    <div id="productvideo" class="modal fade">
+      <div class="modal-dialog">
+        <div class="modal-content" style="background-color: #BDBDBD;">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" name="button">&times;</button>
+          </div>
+          <div class="modal-body">
+            <iframe width=100%; height="315" src="https://www.youtube.com/embed/raALqdLWidw" frameborder="0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4 col-md-4 col-xl-4 col-sm-4 col-xs-4 text-center" id="middle-box">
+    <a href="#trainingvideo" data-toggle="modal"><img src="../images/Solar-it-Solution.jpg" alt="" id="middle-image" /></a>
+    <p class="text-center">
+      <a href="#trainingvideo" data-toggle="modal">Training</a>
+    </p>
+  </div>
+
+      <div id="trainingvideo" class="modal fade">
+        <div class="modal-dialog ">
+          <div class="modal-content" style="background-color: #BDBDBD;">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" name="button">&times;</button>
+            </div>
+            <div class="modal-body">
+              <iframe width="100%" height="315" src="https://www.youtube.com/embed/SR0FyFNERj0" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+ <!-- end Training-->
+
+
+</div>
+<div class="row" id="row-line">
+  <div class="col-lg-12 col-md-12 col-xl-12 col-sm-12 col-xs-12">
+    <p id="line-heading">
+      <h3>Latest Stories<span class="hidden-md hidden-xs">................................................</span></h3>
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-xl-4 col-sm-4 col-xs-4" id="left-side">
+  <img src="../images/wipro_hcl.jpg" alt="" id="side-image" />
+  </div>
+  <div class="col-lg-8 col-md-8 col-xl-8 col-sm-8 col-xs-8" id="right-side">
+    <h3>Wipro, HCL Tech bag deals worth over $1bn</h3>
+    <p>
+      Signalling a rebound in the infotech industry, two of India’s leading IT companies, Wipro and HCL Technologies, have between them signed three large deals worth more than $1 billion, as advanced economies show signs of a thaw.
+      <p><a href="#">Read more</a></p>
+    </p>
+</div>
+</div>
+<div class="row">
+  <div class="col-lg-8 col-md-8 col-xl-8 col-sm-8 col-xs-8" id="right-side">
+    <h3><p>
+      Wipro to expand operations in Romania.
+    </p></h3>
+    <p>
+      Country's third largest software services firm Wipro today said it will expand operations in Romania with the addition of about 150 employees by end of next calendar year. Wipro plans to increase its employee strength in Romania
+    </p>
+    <p><a href="#">Read more</a></p>
+</div>
+<div class="col-lg-4 col-md-4 col-xl-4 col-sm-4 col-xs-4" id="left-side">
+<img src="../images/wipro_special.jpg" alt="" id="middle-image" />
+</div>
+</div>
+<div class="row">
+  <div class="col-lg-4 col-md-4 col-xl-4 col-sm-4 col-xs-4" id="left-side">
+  <img src="../images/wipro_srilanka.jpg" alt="" id="middle-image" />
+  </div>
+  <div class="col-lg-8 col-md-8 col-xl-8 col-sm-8 col-xs-8" id="right-side">
+    <h3><p>
+      Wanted: SAARC tech hub in Lanka
+    </p></h3>
+    <p>
+      For India, which has evolved into not just a nation of programmers but one of seasoned IT managers and entrepreneurs, Sri Lanka could be a hub where it can attract knowledge workers from across South Asia.
+      <p><a href="#">Read more</a></p>
+    </p>
+</div>
+</div>
+<div class="row">
+  <div class="col-lg-8 col-md-8 col-xl-8 col-sm-8 col-xs-8" id="right-side">
+    <h3><p>
+      Wipro’s Q2 profit rises 8%, lags estimates
+    </p></h3>
+    <p>
+      Revenue rose 8% to Rs11,816 crore from a year earlier; net profit fell 0.8% sequentially, while revenue rose 5%.
+      <p><a href="#">Read more</a></p>
+    </p>
+  </div>
+  <div class="col-lg-4 col-md-4 col-xl-4 col-sm-4 col-xs-4" id="left-side">
+    <img src="../images/wipro_special.jpg" alt="" id="middle-image" />
+  </div>
+</div>
+<div class="row" id="row-line-middle">
+  <div class="col-lg-12">
+    <p id="line-heading">
+      <h3>Our Team...</h3>
+    </p>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-4" id="middle-box-circle">
+    <img src="../images/TK.jpg" alt="" class="img-circle" id="middle-image-circle" />
+    <p>
+      <a href="#">T K Kurien</a>
+    </p>
+  </div>
+  <div class="col-lg-4" id="middle-box-circle">
+    <img src="../images/abidali.jpg" alt="" class="img-circle" id="middle-image-circle" />
+    <p>
+      <a href="#">Abidali Z Neemuchwala</a>
+    </p>
+  </div>
+  <div class="col-lg-4" id="middle-box-circle">
+    <img src="../images/premji.jpg" alt="" class="img-circle" id="middle-image-circle" />
+    <p>
+      <a href="#">Azim Hashim Premji</a>
+    </p>
+  </div>
+</div>
+</div><!-- end container-fluid -->
+<footer class="footermain">
+
+			<div class="footer-left">
+
+				<h3>Wipro<span>Ltd.</span></h3>
+
+				<p class="footer-links">
+					<a href="#">Home</a>
+					·
+					<a href="#">Blog</a>
+					·
+					<a href="#">Pricing</a>
+					·
+					<a href="#">About</a>
+					·
+					<a href="#">Faq</a>
+					·
+					<a href="#">Contact</a>
+				</p>
+
+				<p class="footer-copyright">Wipro Limited &copy; 2015-2016</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<p><span>WIPRO Technologies</span></p>
+				</div>
+
+				<div>
+					<p>7th Main Rd,First Block,Koramangala, Bengaluru, Karnataka</p>
+				</div>
+        <div>
+      		<p>080 2844 0011</p>
+  			</div>
+
+				<div>
+					<p><a href="mailto:support@wipro.com">support@wipro.com</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Wipro helps customers do business better by leveraging our industry-wide experience, deep technology expertise, comprehensive portfolio of services and ...
+				</p><p>
+				  <a href="#">Read more</a>
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class=""><img src="../images/fb.jpg" alt="" /></i></a>
+					<a href="#"><i class=""><img src="../images/ggl.png" alt="" /></i></a>
+					<a href="#"><i class=""><img src="../images/lin.png" alt="" /></i></a>
+
+				</div>
+
+			</div>
+
+
+		</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>
